@@ -9,15 +9,14 @@ and open the template in the editor.
 */
 body{
     background: #009933;
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 10s infinite;
+    -webkit-animation: mymove 20s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 20s infinite;
 }
 table#principal{
     margin-top: 5%;    
     background: #fff;
     padding: 0px 25px 25px 25px;
-    border: 10px solid #cdcdcd;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 table#principal td{
     margin: 10px;
@@ -50,23 +49,75 @@ table#principal td{
     margin: 0px;
     margin-top: 2%;
     color: #fff;
+    font-family: comic,arial;
+    text-decoration: underline;
 }
 table tr td{
     padding: 1%;
 }
 .subtitle{
     width: 150px;
+    font-family: comic,arial;
+}
+.image:hover{
+    -webkit-animation: opacityslide 0.6s 1; /* Chrome, Safari, Opera */
+    animation: opacityslide 0.6s 1;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12pt;
+}
+a:visited{
+    color: #5cd65c;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+a#new{
+    width: 50px;
+    height: auto;
+    padding: 7px;
+    background: #ababab;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 30%;;
+    transition: background 0.5s;
+}
+a#new:hover{
+    background: #ff7b00;
+}
+/*fontes externas*/
+@font-face {
+    font-family: "comic";
+    src: url("../font/comic.ttf");
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     0% {background-color: #009933;}
-    50% {background-color: #b30000;}
+    50% {background-color: #005ce6;}
     100% {background-color: #009933;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
     0% {background-color: #009933;}
-    50% {background-color: #b30000;}
+    50% {background-color: #005ce6;}
     100% {background-color: #009933;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opacityslide {
+    0% {opacity: 1;}
+    50% {opacity: 0.7;}
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes opacityslide {
+    0% {opacity: 1;}
+    50% {opacity: 0.7;}
+    100% {opacity: 1;}
 }

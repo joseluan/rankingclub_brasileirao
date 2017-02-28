@@ -33,14 +33,14 @@
                         %>
                         <tr>
                             <td><%=contador%>°</td>
-                            <td>&nbsp;<img width="25pxs" height="25px"  src="imagens/<%=rs.getString("nome_logo")%>"/>&nbsp;</td>
-                            <td>&nbsp;<%=rs.getString("nome")%></td>
+                            <td>&nbsp;<img width="25pxs" height="25px" class="image" src="imagens/<%=rs.getString("nome_logo")%>"/>&nbsp;</td>
+                            <td>&nbsp;<a target="_blank" href="<%=rs.getString("link")%>"><%=rs.getString("nome")%></a></td>
                         </tr>
                         <%
                             contador++;
                             }
                             contador = 1;
-                        %>
+                        %>  
                     </center>
                 </table>
             </div>
@@ -106,6 +106,11 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <a id="new" href="index.jsp">New combat</a>
+                            </td>
+                        </tr> 
                     </table>
                 </center>
             </div>
