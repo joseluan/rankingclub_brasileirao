@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/02/2017, 02:02:29
+    Author     : Luan
+*/
+body{
+    background: #009933;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 10s infinite;
+}
+table#principal{
+    margin-top: 5%;    
+    background: #fff;
+    padding: 0px 25px 25px 25px;
+    border: 10px solid #cdcdcd;
+    border-radius: 20px;
+}
+table#principal td{
+    margin: 10px;
+}
+#RankingLateral{
+    float: right;
+    bottom: 5%;
+    width: 20%;
+    background: #ff7b00;
+    color: #fff;
+    font-family: arial,sans-serif;
+    font-size: 13pt;
+    margin-top: 5px;
+    padding: 0px 0px 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+#RankingLateral table td{
+    list-style: none;
+    margin: 4px 0px 4px 0px;
+    transition: font-size 1s;
+    transition: background-color 0.6s;
+}
+#RankingLateral table td:hover{
+    font-size: 14pt;
+    background-color: #db7f00;
+}
+#title{
+    width: 50%;
+    margin: 0px;
+    margin-top: 2%;
+    color: #fff;
+}
+table tr td{
+    padding: 1%;
+}
+.subtitle{
+    width: 150px;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {background-color: #009933;}
+    50% {background-color: #b30000;}
+    100% {background-color: #009933;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {background-color: #009933;}
+    50% {background-color: #b30000;}
+    100% {background-color: #009933;}
+}
